@@ -4,28 +4,25 @@ body{
     background-image: url(car1.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 100em;
+    font-size: 15px;
 }
-
 nav{
     background-color:white;
-    padding: 5px;
-    position: sticky;
+    padding: 1px;
+     position: sticky;
     top: 0;
     display:flex;
     align-items: center; 
     justify-content: space-around;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
+    z-index: 1;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
 }
 .right-col{
     display: flex;
     gap: 20px;
    margin-right: 20px;
    align-items: center;
-}
-p {
-    font-size: 20px;
-    margin: 0px 500px 0px 0px;
 }
 p span{
     color: rgb(254, 189, 0);
@@ -188,5 +185,184 @@ main>h1{
 }
 main>p{
     text-align: center;
-margin: 30px 300px 20px 300px;
+    margin: 20px 300px 20px 300px;
 }
+
+/*--------------------------------------*/
+
+  #car-list-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 300px;
+    margin-top: 450px;
+  }
+  .car {
+    margin: 20px;
+    height: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+  }
+  .car img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+.car>img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+  .car>h3{
+    margin-right: 500px;
+    color: rgb(254, 189, 0);
+  }
+  .car>button:hover{
+    transition: 0.3s;
+    background-color: rgb(17, 17, 25);
+    color: rgb(254, 189, 0);
+  }
+  /*-----------------------------------------*/
+
+  .slide-container{
+    width: 100%;
+    padding: 40px 0;
+    
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 5px;
+
+  }
+  .card{
+    border-radius: 5px;
+    background-color: #FFF;
+    border: none;
+   
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17, 17, 25);
+    border-radius: 5px 25px 0 25px;
+    border: none;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+    
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background-image: url(rev3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(254, 189, 0);
+  }
+  .description{
+    font-size: 14px;
+    color: rgb(17, 17, 25);
+    text-align: center;
+  }
+  .button{
+    border: none;
+    font-size: 16px;
+    color: rgb(17, 17, 25);
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid rgb(254, 189, 0);
+    border-radius: 500px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button:hover{
+    background: rgb(254, 189, 0);
+    color: rgb(17, 17, 25);
+  }
+  .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: rgb(254, 189, 0);
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+  }
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }}
+
+    /*------------------------------------------*/
+
+    footer{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: rgb(17, 17, 25);
+      /* background-color: rgb(17, 17, 25);
+      color:white;*/
+      margin-top: 50px;
+    }
+   footer h4{
+      color: rgb(254, 189, 0);
+    }
