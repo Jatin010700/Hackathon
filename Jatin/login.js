@@ -13,6 +13,5 @@ loginBtn.addEventListener('click', (event) => {
     alert('Please enter your password');
     return;
   }
-
-  window.location.href = 'next-page.html';
+  window.location.href = "homepage.html";
 });
