@@ -30,9 +30,9 @@
 
  <div class="right-col">
             <a href="#">Home</a>
-            <a href="#">Rent</a>
-            <a href="#">Reviews</a>
-            <a href="#">Contact</a>
+            <a href="#car-list-container">Rent</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact-info">Contact</a>
             
 
             <input type="submit" id = "login" value="Log In" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">
@@ -48,10 +48,10 @@
                 </div>
                 <div class="container">
                     <!-- Username -->
-                    <label for="uname"><b>Email Address</b></label>
+                    <label for="uname"><b>Email Address:</b></label>
                     <input type="text" placeholder="Enter Email" name="uname" required>
                     <!-- Password -->
-                    <label for="psw"><b>Password</b></label>
+                    <label for="psw"><b>Password:</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
                     <!-- Submit Button -->
                     <button type="submit">Login</button>
@@ -109,7 +109,7 @@
     <!------------------------------------->
 
 <br>
-
+<div id="reviews">
     <div class="slide-container swiper">
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
@@ -281,9 +281,10 @@
         <div class="swiper-button-prev swiper-navBtn"></div>
         <div class="swiper-pagination"></div>
     </div>
+</div>
 
     <footer>
-        <div class="contact-info">
+        <div id="contact-info">
             <h4>Contact Us:</h4>
             <p>123 Main Street<br>Anytown, USA 12345</p>
             <p>Phone: (123) 456-7890<br>Email: info@example.com</p>

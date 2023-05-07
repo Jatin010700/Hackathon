@@ -90,6 +90,10 @@ input[type=email], input[type=password], input[type=text], input[type=number] {
     border-radius: 500px;
     font-size: 20px;
     }
+    button:hover{
+      opacity: 0.9;
+      transform: scale(0.9)
+    }
     /* For the cancel button */
     .cancelbtn {
     width: auto;
@@ -197,7 +201,7 @@ main>p{
     justify-content: space-around;
     margin: 0 auto;
     max-width: 300px;
-    margin-top: 450px;
+    margin-top: 480px;
   }
   .car {
     margin: 20px;
@@ -233,13 +237,13 @@ main>p{
   .slide-container{
     width: 100%;
     padding: 40px 0;
-    
+
   }
   .slide-content{
     margin: 0 40px;
     overflow: hidden;
     border-radius: 5px;
-
+    
   }
   .card{
     border-radius: 5px;
@@ -294,6 +298,10 @@ main>p{
     background-repeat: no-repeat;
     background-size: 100%;
   }
+  .card-image:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
   .name{
     font-size: 20px;
     font-weight: bold;
@@ -312,6 +320,7 @@ main>p{
     background-color: white;
     border: 1px solid rgb(254, 189, 0);
     border-radius: 500px;
+    width: 50%;
     margin: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -366,3 +375,6 @@ main>p{
    footer h4{
       color: rgb(254, 189, 0);
     }
+
+
+    
