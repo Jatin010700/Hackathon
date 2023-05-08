@@ -196,6 +196,7 @@ main>h1{
 main>p{
     text-align: center;
     margin: 20px 300px 20px 300px;
+    font-weight: bold;
 }
 .main-header {
   animation: 2s anim-lineUp ease;
@@ -282,7 +283,7 @@ main>p{
   /*----------------people review--------------------*/
 
   .slide-container{
-    width: 100%;
+    width: 90%;
     padding: 40px 0;
 
   }
