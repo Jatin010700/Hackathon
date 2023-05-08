@@ -57,9 +57,9 @@ var cars = [
     var pElement = document.createElement("p");
     pElement.innerText = "Price: $" + car.price + " | " + "$" + car.rent +  "/month";
     var buttonElement = document.createElement("button");
-    buttonElement.innerText = "About";
+    buttonElement.innerText = "Book Now";
     var buttonEl = document.createElement("button")
-    buttonEl.innerText = "Book Now";
+    buttonEl.innerText = "About!";
     carElement.appendChild(imgElement);
     carElement.appendChild(h3Element);
     carElement.appendChild(pElement);
