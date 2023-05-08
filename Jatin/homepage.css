@@ -17,7 +17,7 @@ nav{
     align-items: center; 
     justify-content: space-around;
     margin-bottom: 60px;
-    z-index: 1;
+    z-index: 9;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
 }
 .right-col{
@@ -229,6 +229,27 @@ main>p{
     max-width: 300px;
     margin-top: 480px;
   }
+  #car-list-container{
+    animation: 2.5s anim-lineUp ease;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
   .car {
     margin: 20px;
     height: 50%;
@@ -265,6 +286,27 @@ main>p{
     padding: 40px 0;
 
   }
+  .slide-container{
+    animation: 3s anim-lineUp ease;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
   .slide-content{
     margin: 0 40px;
     overflow: hidden;
