@@ -6,6 +6,8 @@ body{
     background-size: 100%;
     font-size: 15px;
 }
+
+/*----------------top Nav---------------------*/
 nav{
     background-color:white;
     padding: 1px;
@@ -66,7 +68,7 @@ a:hover,nav svg:hover{
     transition: 0.5s;
 }
 
-/*------------------------------------*/
+/*-----------------input Form-------------------*/
 
 input[type=email], input[type=password], input[type=text], input[type=number] {
     width: 100%;
@@ -105,6 +107,9 @@ input[type=email], input[type=password], input[type=text], input[type=number] {
     }
     .container {
     padding: 16px;
+    }
+    .container>p{
+      margin-bottom: 0px;
     }
     span.psw {
     float: right;
@@ -176,7 +181,7 @@ input[type=email], input[type=password], input[type=text], input[type=number] {
 }
 
 
-/*-------------------------------------*/
+/*---------------main header--------------*/
 
 main{
     display: flex;
@@ -186,13 +191,34 @@ main{
 main>h1{
     color: rgb(254, 189, 0);
     font-weight: bold;
+    font-size: 50px;
 }
 main>p{
     text-align: center;
     margin: 20px 300px 20px 300px;
 }
+.main-header {
+  animation: 2s anim-lineUp ease;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 
-/*--------------------------------------*/
+/*----------------Car rent----------------*/
 
   #car-list-container {
     display: flex;
@@ -232,7 +258,7 @@ main>p{
     background-color: rgb(17, 17, 25);
     color: rgb(254, 189, 0);
   }
-  /*-----------------------------------------*/
+  /*----------------people review--------------------*/
 
   .slide-container{
     width: 100%;
@@ -361,7 +387,7 @@ main>p{
       display: none;
     }}
 
-    /*------------------------------------------*/
+    /*----------------------footer-------------------*/
 
     footer{
       display: flex;
@@ -376,5 +402,6 @@ main>p{
       color: rgb(254, 189, 0);
     }
 
+    /*-----------------Bottom Media Queries-------------------*/
 
-    
+
