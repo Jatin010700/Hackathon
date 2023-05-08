@@ -272,8 +272,12 @@ main>p{
     transition: 0.3s;
 }
   .car>h3{
-    margin-right: 500px;
+    /* margin-right: 500px; */
     color: rgb(254, 189, 0);
+  }
+  .car>button:last-child{
+    padding:  5px 100px 5px 100px;
+    
   }
   .car>button:hover{
     transition: 0.3s;

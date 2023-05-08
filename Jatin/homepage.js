@@ -32,11 +32,11 @@ var cars = [
       year: 2020,
       price: 100000,
       rent: 250,
-      image: "car3.jpg",
+      image: "car9.jpg",
     },
     {
         make: "Dodge",
-        model: "Hellcat SRT",
+        model: "Hellcat",
         year: 2020,
         price: 75000,
         rent: 200,
