@@ -465,6 +465,9 @@ main>p{
         margin-bottom: 20px;
         gap:10px;
       } 
+      #id01>.container{
+        padding: 20px;
+      }
       #car-list-container{
         flex-wrap: wrap;
         margin-top: 0px;

@@ -254,4 +254,31 @@ a:hover{
   
   /*---------------------------------------*/
 
- 
+  @media only screen and (max-width: 430px) {
+    body{
+      background-image: url(road1.jpeg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+    }
+    .login{
+      padding-bottom: 0px;
+    }
+    #email,#password{
+      position: relative;
+      left: -50px;
+      width: 150%;
+    }
+   .title{
+      flex-wrap: wrap;
+    }
+    .register{
+      display: none;
+    }
+    .copyright{
+      display: none;
+    }
+    svg{
+      color:rgb(254, 189, 0) ;
+    }
+  }
