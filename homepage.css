@@ -460,7 +460,8 @@ main>p{
       #car-list-container{
         flex-wrap: wrap;
       }
-      #contact-info{
+      .main-header{
         flex-wrap: wrap;
+      
       }
     }
