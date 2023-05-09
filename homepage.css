@@ -453,15 +453,29 @@ main>p{
 
 
     @media only screen and (max-width: 430px) {
+      body{
+        background-image: none;
+      }
      nav {
         flex-wrap: wrap;
-        flex-direction: column;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
       }
+      nav>.right-col{
+        display: flex;
+        margin-bottom: 20px;
+        gap:10px;
+      } 
       #car-list-container{
         flex-wrap: wrap;
+        margin-top: 0px;
       }
       .main-header{
+      text-align: center;
+      }
+      main>p{
+        display: none;
+      }
+      footer{
         flex-wrap: wrap;
-      
       }
     }
