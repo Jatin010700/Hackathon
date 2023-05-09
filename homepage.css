@@ -452,3 +452,15 @@ main>p{
     /*-----------------Bottom Media Queries-------------------*/
 
 
+    @media only screen and (max-width: 430px) {
+     nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      #car-list-container{
+        flex-wrap: wrap;
+      }
+      #contact-info{
+        flex-wrap: wrap;
+      }
+    }
